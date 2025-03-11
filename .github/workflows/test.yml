@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v4  # JDKのセットアップ
         with:
           java-version: '17'  # 使用するJDKのバージョン
-
+          distribution: 'temurin'
       - name: Cache Maven dependencies
         uses: actions/cache@v4  # Mavenの依存関係のキャッシュ
         with:
