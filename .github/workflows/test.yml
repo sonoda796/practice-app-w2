@@ -14,15 +14,15 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v2  # リポジトリのコードをチェックアウト
+        uses: actions/checkout@v4  # リポジトリのコードをチェックアウト
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v2  # JDKのセットアップ
+        uses: actions/setup-java@v4  # JDKのセットアップ
         with:
           java-version: '17'  # 使用するJDKのバージョン
 
       - name: Cache Maven dependencies
-        uses: actions/cache@v2  # Mavenの依存関係のキャッシュ
+        uses: actions/cache@v4  # Mavenの依存関係のキャッシュ
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
