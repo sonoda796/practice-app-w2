@@ -3,10 +3,10 @@ name: Java CI with Maven
 on:
   push:
     branches:
-      - main  # 'main'ブランチに変更がプッシュされたときに実行
+      - master  # 'main'ブランチに変更がプッシュされたときに実行
   pull_request:
     branches:
-      - main  # 'main'ブランチへのプルリクエスト時にも実行
+      - master  # 'main'ブランチへのプルリクエスト時にも実行
 
 jobs:
   build:
