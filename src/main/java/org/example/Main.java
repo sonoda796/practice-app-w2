@@ -3,10 +3,15 @@ package org.example;
 //TIP コードを<b>実行</b>するには、<shortcut actionId="Run"/> を押すか
 // ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
     public static void main(String[] args) {
         //TIP ハイライトされたテキストにキャレットがある状態で <shortcut actionId="ShowIntentionActions"/> を押すと
         // IntelliJ IDEA によるその修正案を確認できます。
-        System.out.printf("Hello and welcome practice-app-w2!");
+        System.out.print("Hello and welcome practice-app-w2!");
 
         for (int i = 1; i <= 5; i++) {
             //TIP <shortcut actionId="Debug"/> を押してコードのデバッグを開始します。<icon src="AllIcons.Debugger.Db_set_breakpoint"/> ブレークポイントを 1 つ設定しましたが、
